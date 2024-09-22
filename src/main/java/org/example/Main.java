@@ -1,19 +1,23 @@
 package org.example;
 
 import ManipularCsv.ManipularCSV;
-import com.opencsv.CSVReader;
+import ManipularCsv.MyEntity;
 
+import java.util.List;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-    static String  ARCHIVEROUTE ="ruta/al/archivo/datos.csv";
+    static String  ARCHIVEROUTE ="C:\\Users\\user\\Documents\\Proyectos Intellij\\Proyecto ED\\GestionarTraspasos\\src\\main\\java\\CSV\\Libro1.csv";
 
     public static void main(String[] args) {
+        // Create an instance of ManipularCSV, passing the entity class type
+        ManipularCSV<MyEntity> csvManipulator = new ManipularCSV(MyEntity.class);
 
-        ManipularCSV mpCsv = new ManipularCSV();
-        mpCsv.leerArchivo(ARCHIVEROUTE);
-        System.out.println("");
+        // Read all rows from the CSV file
+        List<MyEntity> entities = csvManipulator.leerTodasLasFilas(ARCHIVEROUTE);
+        System.out.println("Entities read from CSV file:");
+        for (MyEntity entity : entities) {
+            System.out.println(entity.toString());
+        }
     }
 }
