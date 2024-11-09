@@ -5,8 +5,8 @@ public class Cotizante {
     private String tipoDeDocumento;
     private String documento;
     private String nombre;
-    private String edad;
-    private String semanasCotizadas;
+    private int edad;
+    private int semanasCotizadas;
     private boolean embargo;
     private boolean inhabilitado;
 
@@ -38,19 +38,19 @@ public class Cotizante {
         this.nombre = nombre;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
-    public String getSemanasCotizadas() {
+    public int getSemanasCotizadas() {
         return semanasCotizadas;
     }
 
-    public void setSemanasCotizadas(String semanasCotizadas) {
+    public void setSemanasCotizadas(int semanasCotizadas) {
         this.semanasCotizadas = semanasCotizadas;
     }
 

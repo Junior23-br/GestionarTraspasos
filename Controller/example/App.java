@@ -8,47 +8,36 @@ import Model.Embargado;
 import Model.Inhabilitado;
 
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.util.List;
 
 public class App {
-
-    public static void main(String[] args) throws IOException {
-
-
-
-        Cotizantes cotizantes = new Cotizantes();
-        List<Cotizante> cotizante = cotizantes.obtenerTodos();
-
-        for (Cotizante cotizante1 : cotizante) {
-            System.out.println(cotizante1);
-        }
-
-
-        Embargos embargos = new Embargos();
-        List<Embargado> embargado = embargos.obtenerTodos();
-
-        for(Embargado embargos1 : embargado) {
-            System.out.println(embargos1.toString());
-        }
-
-        Inhabilitados inhabilitados = new Inhabilitados();
-        List<Inhabilitado> inhabilitado = inhabilitados.obtenerTodos();
-        for(Inhabilitado inhabilitados1 : inhabilitado) {
-            System.out.println(inhabilitados1.toString());
-        }
-    }
-
-    public static void ejemploReflection() {
+    public static void main(String[] args) {
         try {
-            Class<Cotizante> claseEntidad = Cotizante.class;
-            Cotizante paisEjemplo = claseEntidad.getDeclaredConstructor().newInstance();
-            Field field = Cotizante.class.getDeclaredField("nombre");
-            field.setAccessible(true);
-            field.set(paisEjemplo, "Juan Pérez");
-            System.out.println(paisEjemplo);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+            // Cargar datos de Cotizantes desde el archivo CSV
+            Cotizantes cotizantesDao = new Cotizantes();
+            List<Cotizante> cotizantes = cotizantesDao.obtenerTodos();
+            System.out.println("Los Cotizantes son:");
+            for (Cotizante cotizante : cotizantes) {
+                System.out.println(cotizante.getNombre() + " - " + cotizante.getDocumento());
+            }
+
+            // Cargar datos de Embargados desde el archivo CSV
+            Embargos embargosDao = new Embargos();
+            List<Embargado> embargados = embargosDao.obtenerTodos();
+            System.out.println("\nLos Embargados son:");
+            for (Embargado embargado : embargados) {
+                System.out.println(embargado.getDocumento() + " - " + embargado.getNombre());
+            }
+
+            // Cargar datos de Inhabilitados desde el archivo CSV
+            Inhabilitados inhabilitadosDao = new Inhabilitados();
+            List<Inhabilitado> inhabilitados = inhabilitadosDao.obtenerTodos();
+            System.out.println("\nLos Inhabilitados son:");
+            for (Inhabilitado inhabilitado : inhabilitados) {
+                System.out.println(inhabilitado.getNombre() + " - " + inhabilitado.getDocumento());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
