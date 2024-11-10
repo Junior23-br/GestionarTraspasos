@@ -1,7 +1,7 @@
 package Model;
 
 
-public class Cotizante {
+public class Cotizante implements Comparable<Cotizante> {
     private String tipoDeDocumento;
     private String documento;
     private String nombre;
@@ -9,10 +9,12 @@ public class Cotizante {
     private int semanasCotizadas;
     private boolean embargo;
     private boolean inhabilitado;
+    private boolean Renta;
 
     public Cotizante(){
         this.embargo=false;
         this.inhabilitado=false;
+        this.Renta=false;
     }
     public String getTipoDeDocumento() {
         return tipoDeDocumento;
@@ -68,5 +70,16 @@ public class Cotizante {
 
     public void setInhabilitado(boolean inhabilitado) {
         this.inhabilitado = inhabilitado;
+    }
+
+    public boolean isRenta() {
+        return Renta;
+    }
+
+    public void setRenta(boolean renta) {
+        Renta = renta;
+    }
+    @Override public int compareTo(Cotizante next) {
+        return Integer.compare(this.edad, next.getEdad());
     }
 }

@@ -1,4 +1,4 @@
-tipoDeDocumento;;documento;;nombre;;edad;;semanasCotizadas;;embargo;;inhabilitado
-CC;;123456789;;Juan Perez;;23;;100;;FALSE;;FALSE
-CC;;972612098;;Mateo Gomez;;32;;111;;FALSE;;FALSE
-CE;;821212222;;Pedro Ruiz;;25;;123;;FALSE;;TRUE
+tipoDeDocumento;;documento;;nombre;;edad;;semanasCotizadas;;embargo;;inhabilitado;;Renta
+CC;;123456789;;Juan Perez;;23;;100;;FALSE;;FALSE;;FALSE
+CC;;972612098;;Mateo Gomez;;32;;111;;FALSE;;FALSE;;TRUE
+CE;;821212222;;Pedro Ruiz;;25;;123;;FALSE;;TRUE;;FALSE
