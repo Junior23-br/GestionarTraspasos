@@ -1,0 +1,101 @@
+cedula;nombre;edad;correo;telefono;haEstadoListaNegra;esPrePensionado;perteneceInsPublica;institucionPublica;tieneCondecoracion;tieneHijosInpec;tieneFamPolicia;esElMayorEdad;observacionDisciplinaria;semanasCot;ciudadNacimiento;ciudadResidencia;alcanzoEdadRPM;fondo;estado
+1842561608;Luis Hernandez;65;davidlopez11@gmail.com;3090984357;true;false;false;armada;false;false;true;true;false;305;Bogotá;Cartagena;true;oldmutual;null
+1487020702;David Ortiz;69;estebanaristizabal269@gmail.com;3034828763;true;false;false;armada;true;false;false;false;false;145;Pereira;Medellín;true;colfondos;null
+1058060499;Antonia Martinez;42;ludwinfigueroa577@gmail.com;3171668112;true;true;false;armada;false;true;true;true;true;1121;Cali;Armenia;true;porvenir;null
+1752525566;Antonia Hernandez;24;ludwinmartinez117@gmail.com;3160648806;false;false;false;mininterior;false;true;false;false;false;302;Bucaramanga;Bucaramanga;false;oldmutual;null
+1322134860;Mercedez Hernandez;39;camilaaristizabal182@gmail.com;3140944148;false;true;false;inpec;true;false;true;true;true;1055;Cali;Manizales;true;oldmutual;null
+1019969942;Mercedez Lopez;89;camilaarango901@gmail.com;3101807712;false;true;true;policia;false;true;false;false;true;513;Pereira;Cartagena;true;porvenir;null
+1681901813;Camila Martinez;56;davidarango419@gmail.com;3048657684;false;false;true;armada;true;false;true;true;true;217;Santa Marta;Santa Marta;false;colfondos;null
+1686346837;Daniela Martinez;31;mercedezramirez169@gmail.com;3063647568;false;false;true;inpec;true;true;true;true;true;72;Armenia;Cartagena;true;oldmutual;null
+1001756305;Ana Gutierrez;61;davidlopez430@gmail.com;3141651891;true;true;false;minsalud;true;true;false;false;true;294;Barranquilla;Pereira;false;porvenir;null
+1301355267;Juan Figueroa;79;danielalopez170@gmail.com;3035602227;true;false;true;inpec;true;false;false;true;true;847;Medellín;Manizales;true;proteccion;null
+1009922476;Ludwin Aristizabal;45;ludwinaristizabal695@gmail.com;3129413243;true;false;false;minsalud;true;true;true;false;true;830;Cúcuta;Bucaramanga;true;extranjero;null
+1637888652;Ludwin Gutierrez;74;estebanramirez234@gmail.com;3044538904;true;false;true;inpec;true;true;false;true;true;381;Manizales;Cali;false;proteccion;null
+1508912724;Juan Hernandez;25;danielaramirez282@gmail.com;3197123001;false;true;false;mininterior;true;false;false;false;true;1287;Santa Marta;Bogotá;true;oldmutual;null
+1451681715;Camila Martinez;79;estebanhernandez875@gmail.com;3114201980;true;true;true;mininterior;true;true;false;true;false;947;Pereira;Bucaramanga;false;oldmutual;null
+1140253470;Antonia Aristizabal;88;anaaristizabal896@gmail.com;3016803254;true;true;false;policia;true;false;false;false;false;475;Bogotá;Armenia;false;oldmutual;null
+1192562143;Natalia Arango;29;estebangonzalez602@gmail.com;3042347666;true;false;false;inpec;true;false;false;false;true;819;Cúcuta;Bogotá;false;colfondos;null
+1769511368;Ludwin Arango;53;luisgonzalez968@gmail.com;3165787880;false;true;true;inpec;false;false;true;false;false;459;Manizales;Santa Marta;false;porvenir;null
+1068374177;Camila Lopez;58;juanmartinez330@gmail.com;3059832453;true;false;true;armada;false;true;false;false;true;264;Santa Marta;Santa Marta;false;porvenir;null
+1782023970;Luis Lopez;46;mercedezlopez274@gmail.com;3031354660;false;false;true;policia;true;true;false;false;true;777;Cartagena;Cali;true;oldmutual;null
+1887697739;Natalia Martinez;30;sebastianfigueroa764@gmail.com;3043345893;false;true;true;policia;true;true;false;true;false;689;Armenia;Cartagena;true;oldmutual;null
+1460771119;David Arango;66;sebastiangutierrez776@gmail.com;3017851569;false;false;false;minsalud;true;false;true;true;true;180;Barranquilla;Cúcuta;true;extranjero;null
+1011300623;David Ortiz;60;antonialopez37@gmail.com;3109232950;true;false;true;policia;true;false;true;false;false;805;Armenia;Bogotá;false;colfondos;null
+1000121596;David Ramirez;62;juanhernandez68@gmail.com;3059503891;true;false;true;armada;true;true;true;false;true;966;Santa Marta;Armenia;true;proteccion;null
+1709469897;Camila Gutierrez;46;camilaarango79@gmail.com;3119587671;false;false;true;minsalud;false;false;true;true;false;1267;Bogotá;Santa Marta;true;colfondos;null
+1209219220;Sebastian Aristizabal;71;nataliaortiz501@gmail.com;3026984675;false;true;true;inpec;false;true;false;false;true;430;Armenia;Manizales;true;extranjero;null
+1651469446;David Aristizabal;21;estebanlopez416@gmail.com;3180671785;true;false;false;policia;false;false;true;true;false;261;Armenia;Bucaramanga;true;oldmutual;null
+1116185172;Juan Ramirez;80;antoniamartinez762@gmail.com;3167043458;true;true;false;policia;true;false;false;false;false;1033;Cali;Santa Marta;false;extranjero;null
+1293327226;Mercedez Aristizabal;22;estebanmartinez915@gmail.com;3052867211;true;true;false;policia;false;false;true;true;false;871;Armenia;Medellín;false;colfondos;null
+1638414476;Camila Ortiz;75;luisaristizabal272@gmail.com;3185058849;false;true;true;inpec;false;false;true;true;true;14;Cúcuta;Pereira;false;extranjero;null
+1236096135;Juan Arango;63;luisarango896@gmail.com;3139735777;false;true;true;armada;false;false;false;false;false;166;Barranquilla;Cali;true;proteccion;null
+1744364052;Camila Gonzalez;18;luisgonzalez343@gmail.com;3141282671;true;true;true;minsalud;true;true;false;true;false;779;Bucaramanga;Armenia;true;colfondos;null
+1597705022;Esteban Ramirez;18;analopez385@gmail.com;3187792450;true;true;true;policia;true;true;false;true;true;279;Bucaramanga;Medellín;false;colfondos;null
+1013733802;Ana Lopez;87;antoniahernandez831@gmail.com;3059398070;true;true;false;minsalud;false;true;false;true;true;1250;Pereira;Bogotá;true;proteccion;null
+1647172645;Mercedez Hernandez;72;sebastiangonzalez730@gmail.com;3178068126;false;false;true;mininterior;false;true;true;false;true;439;Armenia;Pereira;false;colfondos;null
+1023352269;Daniela Aristizabal;61;sebastianortiz76@gmail.com;3014473916;true;false;true;mininterior;false;true;true;true;false;897;Bucaramanga;Manizales;true;proteccion;null
+1158680563;David Gonzalez;62;sebastianhernandez252@gmail.com;3078624193;true;false;false;policia;false;true;true;true;false;596;Armenia;Manizales;true;proteccion;null
+1733027577;Daniela Aristizabal;21;camilaarango203@gmail.com;3088280329;true;true;false;inpec;true;true;false;false;true;981;Armenia;Pereira;true;oldmutual;null
+1328650163;Juan Arango;19;ludwinarango943@gmail.com;3073232988;false;false;false;armada;false;true;false;false;false;106;Barranquilla;Cúcuta;true;oldmutual;null
+1162295705;Daniela Ramirez;42;antoniaortiz861@gmail.com;3198221934;true;true;true;mininterior;false;true;true;false;false;472;Cúcuta;Cartagena;true;oldmutual;null
+1129776609;David Lopez;75;davidarango686@gmail.com;3064920062;false;true;true;inpec;true;false;true;false;true;495;Medellín;Bogotá;true;proteccion;null
+1222806329;Sebastian Hernandez;26;davidfigueroa566@gmail.com;3142070108;true;false;false;inpec;false;true;false;true;false;654;Cartagena;Pereira;false;porvenir;null
+1087464692;Sebastian Gutierrez;89;mercedezgutierrez122@gmail.com;3116354287;false;false;false;armada;false;true;false;true;true;331;Armenia;Manizales;true;colfondos;null
+1803471954;Ana Ortiz;90;mercedezaristizabal312@gmail.com;3045129089;false;false;false;mininterior;false;false;true;false;false;494;Bucaramanga;Barranquilla;false;porvenir;null
+1510572281;Mercedez Martinez;27;nataliaaristizabal213@gmail.com;3124083350;true;true;false;minsalud;false;false;true;true;false;3;Pereira;Cartagena;false;colfondos;null
+1273590470;Daniela Ortiz;83;danielalopez985@gmail.com;3162546571;false;true;false;policia;true;false;true;true;true;573;Manizales;Cúcuta;false;proteccion;null
+1746045127;Antonia Ortiz;77;antoniamartinez388@gmail.com;3088225448;false;false;true;inpec;false;false;true;false;false;1291;Pereira;Cúcuta;true;proteccion;null
+1088451065;Antonia Hernandez;30;sebastianaristizabal114@gmail.com;3177522143;false;true;true;inpec;true;true;false;true;true;1267;Armenia;Bucaramanga;false;colfondos;null
+1290823201;Ana Aristizabal;34;ludwinfigueroa884@gmail.com;3091593882;false;true;false;minsalud;false;true;false;false;true;454;Medellín;Manizales;false;porvenir;null
+1648889720;Sebastian Ramirez;37;anafigueroa641@gmail.com;3165739376;false;true;false;policia;false;true;false;true;true;569;Medellín;Medellín;true;porvenir;null
+1607427502;Juan Ramirez;21;nataliaramirez132@gmail.com;3087624246;true;false;true;policia;true;true;true;false;false;420;Armenia;Bogotá;true;proteccion;null
+1247530187;Ana Gonzalez;73;luishernandez80@gmail.com;3035188387;false;true;true;mininterior;false;true;false;true;false;59;Cartagena;Bucaramanga;false;porvenir;null
+1689764527;Antonia Arango;41;antoniagutierrez934@gmail.com;3045360029;false;false;false;policia;false;true;true;true;false;415;Cúcuta;Manizales;false;proteccion;null
+1791701379;Mercedez Ramirez;32;juanmartinez292@gmail.com;3158225208;true;true;true;mininterior;true;false;false;false;true;288;Pereira;Armenia;true;proteccion;null
+1524747042;Antonia Figueroa;56;juanfigueroa435@gmail.com;3069327887;false;false;false;mininterior;true;true;false;false;true;103;Barranquilla;Manizales;false;oldmutual;null
+1309061929;Camila Martinez;69;nataliahernandez851@gmail.com;3124115611;true;true;false;armada;false;false;true;true;true;418;Pereira;Bucaramanga;true;colfondos;null
+1410174378;Mercedez Aristizabal;90;luisfigueroa46@gmail.com;3075995902;true;false;true;policia;true;true;true;false;false;561;Bucaramanga;Barranquilla;true;proteccion;null
+1185074570;Esteban Martinez;85;nataliaaristizabal882@gmail.com;3138608032;false;false;true;policia;false;false;false;true;false;1156;Manizales;Santa Marta;true;colfondos;null
+1637580425;Antonia Aristizabal;65;luisortiz275@gmail.com;3028527960;false;false;false;inpec;true;true;true;false;true;163;Medellín;Santa Marta;false;extranjero;null
+1459714538;Daniela Aristizabal;80;camilamartinez467@gmail.com;3062930916;false;true;false;armada;true;true;false;true;false;964;Santa Marta;Barranquilla;true;extranjero;null
+1424088821;Luis Gutierrez;37;mercedezmartinez413@gmail.com;3038534572;true;true;true;policia;true;false;false;true;true;279;Bogotá;Bogotá;false;extranjero;null
+1510512371;Daniela Gonzalez;84;davidaristizabal440@gmail.com;3128913426;false;false;true;armada;true;false;true;true;true;1251;Cartagena;Barranquilla;false;extranjero;null
+1154871935;Daniela Hernandez;78;camilamartinez436@gmail.com;3076593062;true;true;true;mininterior;true;true;true;false;true;39;Santa Marta;Cali;false;porvenir;null
+1101223604;David Gutierrez;77;antoniagutierrez855@gmail.com;3128905341;true;true;false;minsalud;false;false;false;false;true;567;Medellín;Bogotá;true;proteccion;null
+1418581750;Luis Aristizabal;66;luisaristizabal634@gmail.com;3115160116;true;false;true;mininterior;true;true;true;false;true;206;Cúcuta;Santa Marta;true;extranjero;null
+1328132098;Mercedez Figueroa;48;antoniaarango527@gmail.com;3063278807;false;true;false;armada;true;true;false;false;true;795;Bogotá;Cali;true;extranjero;null
+1422072728;Juan Hernandez;73;mercedezgutierrez592@gmail.com;3099275328;true;true;false;inpec;true;false;true;true;false;750;Cali;Medellín;true;colfondos;null
+1622757614;Mercedez Gutierrez;51;estebanortiz244@gmail.com;3057626736;true;true;false;armada;false;true;true;true;true;1057;Bogotá;Manizales;true;colfondos;null
+1429824975;Antonia Ortiz;20;anamartinez971@gmail.com;3095385913;false;true;true;minsalud;false;true;false;true;true;305;Cali;Santa Marta;true;porvenir;null
+1560011400;Esteban Hernandez;62;analopez532@gmail.com;3000069749;true;true;false;inpec;true;false;false;false;true;1187;Cúcuta;Bogotá;true;oldmutual;null
+1065276616;Mercedez Lopez;22;antoniaramirez975@gmail.com;3151377794;true;true;false;policia;false;false;false;true;false;649;Manizales;Armenia;true;oldmutual;null
+1006960981;Esteban Arango;58;juanarango338@gmail.com;3008979813;true;true;false;mininterior;true;true;false;false;true;622;Manizales;Barranquilla;true;porvenir;null
+1798373954;Sebastian Hernandez;20;antonialopez778@gmail.com;3111699543;true;false;false;inpec;false;true;false;true;false;424;Medellín;Santa Marta;true;proteccion;null
+1814589567;Luis Aristizabal;87;nataliaramirez487@gmail.com;3117721782;false;false;false;policia;true;true;false;false;false;1271;Medellín;Cartagena;false;extranjero;null
+1609581342;Luis Gonzalez;34;estebanarango527@gmail.com;3010792702;true;true;true;mininterior;true;false;true;true;true;603;Bucaramanga;Cúcuta;true;proteccion;null
+1643764227;Camila Gutierrez;20;camilaarango153@gmail.com;3127411014;false;false;false;minsalud;true;false;true;false;false;380;Bucaramanga;Cúcuta;false;oldmutual;null
+1742951270;Ludwin Arango;70;sebastianramirez173@gmail.com;3082290265;true;false;true;mininterior;true;false;true;true;false;952;Bucaramanga;Cali;false;oldmutual;null
+1463437878;Juan Figueroa;85;davidhernandez643@gmail.com;3092236454;true;false;false;mininterior;false;false;false;true;true;1239;Cali;Santa Marta;false;colfondos;null
+1535266559;Ana Hernandez;63;luisaristizabal864@gmail.com;3138485862;false;false;false;mininterior;false;false;false;true;false;933;Medellín;Cali;false;extranjero;null
+1521437357;Antonia Ramirez;23;nataliaarango458@gmail.com;3044332659;false;false;false;minsalud;true;true;false;false;false;606;Bucaramanga;Cúcuta;true;oldmutual;null
+1642569491;David Martinez;49;danielafigueroa919@gmail.com;3120311397;true;false;true;mininterior;true;false;true;false;false;1219;Cali;Pereira;true;porvenir;null
+1523868854;Daniela Arango;32;juanarango971@gmail.com;3196251847;true;true;false;minsalud;true;true;true;true;false;993;Santa Marta;Pereira;true;extranjero;null
+1539662369;Esteban Ortiz;74;analopez982@gmail.com;3030040860;true;true;false;armada;false;true;true;false;false;1169;Bucaramanga;Cartagena;false;proteccion;null
+1749689026;Camila Hernandez;47;luishernandez61@gmail.com;3039233127;true;false;false;minsalud;true;false;true;false;true;468;Manizales;Bucaramanga;false;porvenir;null
+1731304923;Camila Ortiz;47;luishernandez633@gmail.com;3196477531;true;false;false;armada;true;false;false;true;false;962;Barranquilla;Cúcuta;true;oldmutual;null
+1579408792;Ludwin Gutierrez;35;nataliaaristizabal416@gmail.com;3070686905;false;false;true;armada;true;true;true;false;false;371;Cartagena;Cali;true;oldmutual;null
+1273470255;Luis Gonzalez;40;mercedezlopez857@gmail.com;3062733124;true;false;false;armada;false;false;false;false;true;1075;Santa Marta;Santa Marta;true;oldmutual;null
+1558015515;Juan Hernandez;68;anaarango551@gmail.com;3019452692;false;false;true;policia;false;false;false;true;false;958;Bucaramanga;Medellín;true;porvenir;null
+1743343416;Natalia Hernandez;31;nataliaramirez292@gmail.com;3032727188;false;true;false;armada;true;true;false;false;false;338;Medellín;Barranquilla;true;proteccion;null
+1401438428;Juan Hernandez;78;anahernandez113@gmail.com;3061650387;false;true;true;armada;true;false;true;true;false;464;Cartagena;Cali;true;colfondos;null
+1772889452;Luis Gonzalez;72;camilaortiz27@gmail.com;3190626561;false;true;true;armada;false;true;false;true;false;558;Pereira;Barranquilla;true;porvenir;null
+1891290174;Esteban Ortiz;86;mercedezgutierrez130@gmail.com;3116275232;false;true;false;mininterior;false;true;true;false;false;1183;Barranquilla;Manizales;true;extranjero;null
+1555131980;Ludwin Hernandez;34;luislopez882@gmail.com;3051642031;true;false;false;mininterior;false;true;true;false;true;763;Pereira;Cali;true;porvenir;null
+1568588375;Luis Lopez;40;antoniaortiz767@gmail.com;3181465148;true;false;true;policia;false;false;false;false;true;284;Cúcuta;Cartagena;false;extranjero;null
+1459186524;Sebastian Hernandez;33;estebanramirez840@gmail.com;3160795072;true;true;false;minsalud;false;false;false;false;false;731;Medellín;Cartagena;false;oldmutual;null
+1597399125;Antonia Lopez;22;luisgonzalez975@gmail.com;3000016628;false;true;true;inpec;false;false;true;true;false;971;Armenia;Cartagena;true;colfondos;null
+1528076391;Daniela Arango;68;luismartinez169@gmail.com;3168742723;false;true;false;mininterior;true;false;false;false;false;894;Bucaramanga;Cúcuta;false;porvenir;null
+1534939227;Natalia Martinez;85;sebastianarango760@gmail.com;3098191196;false;false;true;inpec;true;true;true;false;true;282;Santa Marta;Cali;true;proteccion;null
+1143890100;Sebastian Aristizabal;31;juanlopez646@gmail.com;3126465992;true;true;false;policia;true;true;true;true;true;987;Pereira;Santa Marta;true;extranjero;null
+1405062307;Luis Ortiz;48;luishernandez35@gmail.com;3164887958;true;true;false;mininterior;false;true;false;false;true;643;Manizales;Manizales;false;colfondos;null
+1665365279;Natalia Lopez;89;juangonzalez661@gmail.com;3015358788;false;false;true;inpec;true;false;true;true;true;1042;Bucaramanga;Santa Marta;true;extranjero;null
