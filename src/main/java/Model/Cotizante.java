@@ -226,5 +226,7 @@ public class Cotizante {
                 ", estado='" + estado + '\'' +
                 '}';
     }
+
+
 }
 
