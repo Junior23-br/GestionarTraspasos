@@ -1,36 +1,47 @@
 package Util;
-
 import Cache.SuperCache;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ProcesadorArchivos implements Runnable {
+    // Rutas de los directorios para el procesamiento de archivos
     private static final String BASE_PATH = "src/main/resources/archivos/";
-    private static final String SOLICITUDES_ENTRANTES = BASE_PATH + "SolicitudesEntrantes";
+    public static final String SOLICITUDES_ENTRANTES = BASE_PATH + "SolicitudesEntrantes";
     private static final String SOLICITUDES_PROCESADAS = BASE_PATH + "SolicitudesProcesadas";
-    private static final String RESULTADOS = BASE_PATH + "ArchivosResultantes"; // Cambiado de "resultados" a "ArchivosResultantes"
+    private static final String RESULTADOS = BASE_PATH + "ArchivosResultantes";
     private static final String CSV_EXTENSION = ".csv";
 
-    private final SuperCache superCache;
+    // Componentes principales del procesador
+    private final SuperCache superCache;           // Cache para almacenar datos temporalmente
     private final Logger logger = Logger.getLogger(ProcesadorArchivos.class.getName());
-    private final AtomicBoolean isRunning;
+    private final AtomicBoolean isRunning;        // Control de estado de ejecución
 
+    /**
+     * Constructor del procesador.
+     * Inicializa el cache y el estado de ejecución.
+     */
     public ProcesadorArchivos(SuperCache superCache) {
         this.superCache = superCache;
         this.isRunning = new AtomicBoolean(true);
     }
 
+    /**
+     * Detiene el procesamiento de archivos.
+     */
     public void detener() {
         isRunning.set(false);
     }
 
+    /**
+     * Implementación del método run de Runnable.
+     * Procesa un lote completo de archivos (modo legacy).
+     */
     @Override
     public void run() {
         if (!isRunning.get()) return;
@@ -42,6 +53,34 @@ public class ProcesadorArchivos implements Runnable {
         }
     }
 
+    /**
+     * Procesa un archivo individual.
+     * Este es el nuevo método principal para el procesamiento uno a uno.
+     */
+    public void procesarArchivoIndividual(File archivo) {
+        try {
+            // Asegurar que existan los directorios necesarios
+            crearDirectoriosSiNoExisten();
+
+            logger.info("Iniciando procesamiento del archivo: " + archivo.getName());
+
+            // Proceso principal del archivo
+            cargarDatosAlCache(archivo);
+            generarResultados(archivo.getName());
+            moverArchivoAProcesados(archivo);
+
+            logger.info("Archivo procesado exitosamente: " + archivo.getName());
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Error procesando archivo: " + archivo.getName(), e);
+        } finally {
+            // Limpiar cache después del procesamiento
+            superCache.limpiarCache();
+        }
+    }
+
+    /**
+     * Procesa un lote completo de archivos (modo legacy).
+     */
     private void procesarLote() {
         try {
             crearDirectoriosSiNoExisten();
@@ -53,12 +92,18 @@ public class ProcesadorArchivos implements Runnable {
         }
     }
 
+    /**
+     * Crea los directorios necesarios si no existen.
+     */
     private void crearDirectoriosSiNoExisten() {
         createDirectoryIfNotExists(SOLICITUDES_ENTRANTES);
         createDirectoryIfNotExists(SOLICITUDES_PROCESADAS);
         createDirectoryIfNotExists(RESULTADOS);
     }
 
+    /**
+     * Crea un directorio específico si no existe.
+     */
     private void createDirectoryIfNotExists(String directoryPath) {
         Path path = Paths.get(directoryPath);
         if (!Files.exists(path)) {
@@ -70,6 +115,9 @@ public class ProcesadorArchivos implements Runnable {
         }
     }
 
+    /**
+     * Procesa todos los archivos pendientes (modo legacy).
+     */
     private void procesarArchivosPendientes() {
         File carpetaEntrantes = new File(SOLICITUDES_ENTRANTES);
         File[] archivos = carpetaEntrantes.listFiles((dir, name) -> name.endsWith(CSV_EXTENSION));
@@ -85,6 +133,9 @@ public class ProcesadorArchivos implements Runnable {
         }
     }
 
+    /**
+     * Procesa un archivo individual (usado en modo legacy).
+     */
     private void procesarArchivo(File archivo) {
         logger.info("Iniciando procesamiento del archivo: " + archivo.getName());
 
@@ -99,22 +150,34 @@ public class ProcesadorArchivos implements Runnable {
         }
     }
 
+    /**
+     * Carga los datos del archivo al cache.
+     */
     private void cargarDatosAlCache(File archivo) throws IOException {
         superCache.cargarCotizantesDesdeArchivo(archivo.getAbsolutePath());
     }
 
+    /**
+     * Mueve el archivo procesado al directorio de procesados.
+     */
     private void moverArchivoAProcesados(File archivo) throws IOException {
         Path origen = archivo.toPath();
         Path destino = Paths.get(SOLICITUDES_PROCESADAS, archivo.getName());
         Files.move(origen, destino);
     }
 
+    /**
+     * Genera los archivos de resultados.
+     */
     private void generarResultados(String nombreArchivoOriginal) throws IOException {
         String nombreBase = nombreArchivoOriginal.replace(CSV_EXTENSION, "");
         String rutaBase = RESULTADOS + File.separator + nombreBase;
         generarArchivosResultado(rutaBase);
     }
 
+    /**
+     * Genera los diferentes archivos de resultado por categoría.
+     */
     private void generarArchivosResultado(String rutaBase) throws IOException {
         // Exportar todos los cotizantes
         CsvUtils.exportarCotizantesACsv(
@@ -128,6 +191,9 @@ public class ProcesadorArchivos implements Runnable {
         exportarCategoriaEspecifica(rutaBase + "_institucionPublica.csv", "InstitucionPublica");
     }
 
+    /**
+     * Exporta cotizantes de una categoría específica.
+     */
     private void exportarCategoriaEspecifica(String ruta, String categoria) throws IOException {
         CsvUtils.exportarCotizantesFiltrados(ruta, superCache, categoria);
     }
