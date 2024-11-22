@@ -42,7 +42,7 @@ public class CotizanteValidador {
         if (cedula == null || cedula.trim().isEmpty()) {
             return "La cédula no puede estar vacía";
         }
-        // Validación de formato de cédula (puedes personalizar según tus requisitos)
+        // Validación de formato de cédula
         if (!cedula.matches("^\\d{6,10}$")) {
             return "Formato de cédula inválido";
         }
@@ -64,7 +64,7 @@ public class CotizanteValidador {
         if (edad < 18) {
             return "El cotizante debe ser mayor de edad";
         }
-        // Límite máximo de edad (ajusta según tus requisitos)
+        // Límite máximo de edad
         if (edad > 100) {
             return "Edad fuera de rango válido";
         }
@@ -117,27 +117,27 @@ public class CotizanteValidador {
     }
 
     public String validarCondecoracion(boolean tieneCondecoracion) {
-        // Puedes agregar lógica específica para condecoraciones si es necesario
+
         return null;
     }
 
     public String validarHijosInpec(boolean tieneHijosInpec) {
-        // Puedes agregar lógica específica para hijos de Inpec
+
         return null;
     }
 
     public String validarFamiliaPolicia(boolean tieneFamPolicia) {
-        // Puedes agregar lógica específica para familia de policía
+
         return null;
     }
 
     public String validarMayorEdad(boolean esElMayorEdad) {
-        // Validación de mayor de edad (puede ser redundante con validarEdad)
+
         return null;
     }
 
     public String validarObservacionDisciplinaria(String observacion) {
-        // Puedes agregar lógica específica para observaciones disciplinarias
+
         return null;
     }
 
@@ -145,7 +145,7 @@ public class CotizanteValidador {
         if (semanasCot < 0) {
             return "Las semanas cotizadas no pueden ser negativas";
         }
-        // Puedes agregar un límite máximo de semanas si es necesario
+
         if (semanasCot > 52 * 45) { // Ejemplo: máximo 45 años de cotización
             return "Número de semanas cotizadas excede el límite";
         }
@@ -173,7 +173,6 @@ public class CotizanteValidador {
         if (fondo == null || fondo.trim().isEmpty()) {
             return "El fondo no puede estar vacío";
         }
-        // Puedes agregar validaciones específicas para fondos permitidos
         return null;
     }
 
@@ -181,7 +180,7 @@ public class CotizanteValidador {
         if (estado == null || estado.trim().isEmpty()) {
             return "El estado no puede estar vacío";
         }
-        // Puedes agregar validaciones específicas para estados permitidos
+
         return null;
     }
 
