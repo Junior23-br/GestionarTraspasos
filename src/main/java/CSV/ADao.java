@@ -1,8 +1,4 @@
 package CSV;
-
-
-import co.edu.uniquindio.modelo.Pais;
-
 import java.io.IOException;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
